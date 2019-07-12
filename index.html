@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Alexandre Peschel</title>
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+	<style>
+		body {
+			font-family:'EB Garamond', serif;
+			font-size:4vw;
+			padding:5vw;
+			transition: color linear 0.05s;
+			/*max-width:1000px;*/
+		}
+		h1, h2, p {
+			font-weight:normal;
+			margin: 0;
+			line-height:110%;
+			display:block;
+		}
+		h1 {
+			padding:5vw 0 2vw;
+			color:black !important;
+		}
+		h2 {
+			padding:10vw 0 2vw;
+			font-size:100%;
+		}
+		p {
+			padding:5vw 0;
+			font-size:100%;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style-type:none;
+			padding: 0;
+		}
+		a {
+			display:inline-block;
+			color:black;
+			text-decoration: none;
+			margin-bottom: 1vw;
+			transition: color linear 0.05s;
+			font-size:4vw;
+		}
+		a span {
+			display:inline-block;
+			border-bottom:1px solid black;
+			transition: border-color linear 0.05s;
+		}
+		body.focus {
+			color:#fff;
+		}
+		body.focus a {
+			color:#fff;
+		}
+		body.focus a span {
+			border-color:#fff;
+		}
+		body.focus a.focus {
+			color:black;
+		}
+		body.focus a.focus span {
+			border-color: black;
+		}
+
+		@media all 
+			and (min-width: 1200px) { 
+				body {
+					max-width:900px;
+					font-size:35px;
+					padding: 60px;
+				}
+				h1 {
+					padding:30px 0 10px;
+				}
+				h2 {
+					padding:50px 0 10px;
+
+				}
+				p {
+					padding:30px 0;
+				}
+				a {
+					margin-bottom: 10px;
+					font-size:35px;
+				}
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Alexandre Peschel</h1>
+
+	<p>In 2010 I founded <i>Ape Unit</i>, a digital design and development studio always eager to know what will be instead of what is. I also write and photograph. 
+	<br><br>Coming from an entrepreneurial background, my work is focused on guiding and boosting emerging companies.</p>
+
+	
+		<a href="mailto:hello@alexandrepeschel.de">
+			<span>hello</span>@<span>alexandre</span>p<span>eschel.de</span>
+		</a><br>
+		<a href="portfolio.html" target="_blank">
+			<span>Portfolio</span>
+		</a>
+	
+
+
+
+	<h2>PUBLICATIONS</h2>
+	<ul>
+		<li>Intro</li>
+		<li>L’Officiel</li>
+		<li>Barbour</li>
+		<li>Ästhetik &amp; Kommunikation</li>
+	</ul>
+
+	<h2>CLIENTS AND COLLABORATIONS WITH</h2>
+	<ul>
+		<li>Akademie der Künste</li>
+		<li>BMW Group</li>
+		<li>E.ON</li>
+		<li>Montblanc</li>
+		<li>Monotype</li>
+		<li>Red Bull</li>
+		<li>Sony</li>
+		<li>Swiss Banking</li>
+		<li>Telefónica</li>
+		<li>Universal Music</li>
+	</ul>
+	-
+	<ul>
+		<li>Häberlein & Mauerer</li>
+		<li>Ketchum Pleon</li>
+		<li>Scholz & Volkmer</li>
+		<li>Strichpunkt Design</li>
+		<li>TLGG</li>
+	</ul>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+	<script>
+		jQuery(function($) {
+
+			if(!('ontouchstart' in window)) {
+				$('a').on('mouseenter', function() {
+					$('body').addClass('focus');
+					$(this).addClass('focus');
+				}).on('mouseleave', function() {
+					$('body').removeClass('focus');
+					$(this).removeClass('focus');
+				});
+			}
+
+		});
+	</script>
+
+	<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-894341-24', 'auto'); ga('send', 'pageview'); </script>
+</body>
+</html>
