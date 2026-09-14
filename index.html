@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width,initial-scale=1" name="viewport">
 	<title>Alexandre Peschel</title>
-	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+	<meta name="description" content="Alexandre Peschel — writing on AI, friction and coordination. Berlin.">
+	<link rel="canonical" href="https://alexandrepeschel.de/">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 	<style>
 		body {
 			font-family:'EB Garamond', serif;
 			font-size:6vw;
 			padding:4vw;
 			transition: color linear 0.05s;
-			/*max-width:1000px;*/
 		}
 		h1, h2, p {
 			font-weight:normal;
@@ -37,18 +38,21 @@
 		}
 		li {
 			list-style-type:none;
-			padding: 0;
+			padding: 0 0 4vw;
+			line-height:110%;
+		}
+		li .date {
+			white-space:nowrap;
 		}
 		a {
-			display:inline-block;
+			display:inline;
 			color:black;
 			text-decoration: none;
-			margin-bottom: 0vw;
 			transition: color linear 0.05s;
-			font-size:6vw;
+			font-size:100%;
 		}
 		a span {
-			display:inline-block;
+			display:inline;
 			border-bottom:1px solid black;
 			transition: border-color linear 0.05s;
 		}
@@ -67,29 +71,25 @@
 		body.focus a.focus span {
 			border-color: black;
 		}
+		.coda {
+			padding-top:10vw;
+		}
 
-		@media all
-			and (min-width: 1200px) {
-				body {
-					max-width:860px;
-					font-size:35px;
-					padding: 60px;
-				}
-				h1 {
-					padding:30px 0 10px;
-				}
-				h2 {
-					padding:50px 0 10px;
+		@media all and (min-width: 1200px) {
+			body {
+				max-width:860px;
+				font-size:35px;
+				padding: 60px;
+			}
+			h1 { padding:30px 0 10px; }
+			h2 { padding:50px 0 10px; }
+			p  { padding:30px 0; }
+			li { padding: 0 0 22px; }
+			.coda { padding-top:50px; }
+		}
 
-				}
-				p {
-					padding:30px 0;
-				}
-				a {
-					margin-bottom: 0px;
-					font-size:35px;
-				}
-
+		@media (prefers-reduced-motion: reduce) {
+			body, a, a span { transition: none; }
 		}
 	</style>
 </head>
@@ -97,51 +97,64 @@
 	<h1>Alexandre Peschel</h1>
 
 	<p>
-		2022 — I co-founded <a href="https://atem.earth/"target="_blank" rel="noopener noreferrer"><span>Atem</span></a> to accelerate our transition towards a future on a thriving planet. 
-		We asked ourselves: What are the most promising tools to address the biggest challenge of out time? 
-		What if carbon would be an essential part of business operations?<br>
-		That’s what we are building: End-to-end carbon and to scale impact and get to a low-carbon economy fast.  
-		We want a future where restoring the planet is built into how businesses work: a new default way of operating.
+		I build things and I write about what it reveals to me.
 		<br><br>
-	
-		2010 — I co-founded <a href="https://apeunit.com/"target="_blank" rel="noopener noreferrer"><span>Ape Unit</span></a>, a digital design and development studio always eager to know what will be instead of what is. 
-		It evolved into a network of specialized teams that explore the digital sphere: <br>
-		Two of them are <a href="https://www.an.jetzt/"target="_blank" rel="noopener noreferrer"><span>AN</span></a>, a design-driven tech studio building future experiences, 
-		and <a href="https://unit8.apeunit.com/"target="_blank" rel="noopener noreferrer"><span>Unit➇</span></a>, a web3 and AI development studio and venture builder.
+		Right now that means agent teams, and the question underneath is not a technical one.
+		Can working with a machine make a person more capable, or only faster at what they could already do?
 		<br><br>
-
-		❋ 
-		<br><br>
-		I’m always looking to connect with people working towards a future on a thriving planet. Let’s chat about how to collaborate.
-		
+		Before that I spent four years on climate tech and left when I decided the bottleneck was somewhere else.
 	</p>
 
-		<a href="mailto:hello@alexandrepeschel.de">
-			<span>hello</span>@<span>alexandre</span>p<span>eschel.de</span>
-		</a><br>
-		
-		<a href="https://www.linkedin.com/in/alexandrepeschel/"target="_blank" rel="noopener noreferrer">
-			<span>LinkedIn</span>
-		</a><br>
+	<h2>Writing</h2>
 
+	<ul>
+		<li><a href="https://alexandrepeschel.substack.com/p/the-climate-crisis-is-actually-a" target="_blank" rel="noopener noreferrer"><span>The climate crisis is actually a crisis of public discourse</span></a> <span class="date">— August 2026</span></li>
+		<li><a href="https://alexandrepeschel.substack.com/p/divergence-and-the-potential-of-friction" target="_blank" rel="noopener noreferrer"><span>Divergence and the Potential of Friction</span></a> <span class="date">— July 2026</span></li>
+		<li><a href="https://alexandrepeschel.substack.com/p/i-used-to-think-it-was-all-a-coordination" target="_blank" rel="noopener noreferrer"><span>I used to think it was all a coordination failure. Here’s what I missed.</span></a> <span class="date">— July 2026</span></li>
+		<li><a href="https://www.linkedin.com/pulse/climate-action-true-cost-everything-alexandre-peschel" target="_blank" rel="noopener noreferrer"><span>Climate Action and the True Cost of Everything</span></a> <span class="date">— July 2021</span></li>
+		<li><a href="https://www.linkedin.com/pulse/climate-action-story-personal-tipping-points-alexandre-peschel" target="_blank" rel="noopener noreferrer"><span>Climate Action: A Story of Personal Tipping Points</span></a> <span class="date">— April 2021</span></li>
+	</ul>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+	<p>
+		New pieces go out on <a href="https://alexandrepeschel.substack.com" target="_blank" rel="noopener noreferrer"><span>Substack</span></a>.
+	</p>
+
+	<h2>Work</h2>
+
+	<p>
+		<a href="https://apeunit.com/" target="_blank" rel="noopener noreferrer"><span>Ape Unit</span></a> — software studio and venture builder, co-founded 2010, still running it.
+		We also run <a href="https://luma.com/user/BuildXAI" target="_blank" rel="noopener noreferrer"><span>Build X AI</span></a>, a builder meetup in Berlin since 2024.
+		<br><br>
+		<a href="https://atem.earth/" target="_blank" rel="noopener noreferrer"><span>Atem</span></a> — carbon management and data aggregator, co-founded 2022, raised 2.5M in venture funding.
+	</p>
+
+	<h2>Elsewhere</h2>
+
+	<p>
+		<a href="mailto:hello@alexandrepeschel.de"><span>hello</span>@<span>alexandre</span>p<span>eschel.de</span></a>
+		<br><br>
+		<a href="https://www.linkedin.com/in/alexandrepeschel/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a>
+		<br><br>
+		<a href="https://alexandrepeschel.substack.com" target="_blank" rel="noopener noreferrer"><span>Substack</span></a>
+	</p>
+
+	<p class="coda">Berlin.</p>
+
 	<script>
-		jQuery(function($) {
-
-			if(!('ontouchstart' in window)) {
-				$('a').on('mouseenter', function() {
-					$('body').addClass('focus');
-					$(this).addClass('focus');
-				}).on('mouseleave', function() {
-					$('body').removeClass('focus');
-					$(this).removeClass('focus');
+		// Hover inversion: everything fades except the link under the cursor.
+		// Was jQuery 3.1.1 from a CDN for this alone; it is six lines without it.
+		if (!('ontouchstart' in window)) {
+			document.querySelectorAll('a').forEach(function (el) {
+				el.addEventListener('mouseenter', function () {
+					document.body.classList.add('focus');
+					el.classList.add('focus');
 				});
-			}
-
-		});
+				el.addEventListener('mouseleave', function () {
+					document.body.classList.remove('focus');
+					el.classList.remove('focus');
+				});
+			});
+		}
 	</script>
-
-	<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-894341-24', 'auto'); ga('send', 'pageview'); </script>
 </body>
 </html>
