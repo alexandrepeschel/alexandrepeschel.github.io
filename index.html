@@ -25,8 +25,11 @@
 			color:black !important;
 		}
 		h2 {
-			padding:10vw 0 2vw;
+			padding:10vw 0 0;
 			font-size:100%;
+		}
+		h2 + p, h2 + ul {
+			padding-top:4vw;
 		}
 		p {
 			padding:6vw 0;
@@ -43,18 +46,17 @@
 		}
 		li .date {
 			white-space:nowrap;
+			font-size:0.6em;
 		}
 		a {
 			display:inline;
 			color:black;
-			text-decoration: none;
-			transition: color linear 0.05s;
 			font-size:100%;
-		}
-		a span {
-			display:inline;
-			border-bottom:1px solid black;
-			transition: border-color linear 0.05s;
+			text-decoration: underline;
+			text-decoration-thickness: 0.06em;
+			text-underline-offset: 0.08em;
+			text-decoration-skip-ink: auto;
+			transition: color linear 0.05s;
 		}
 		body.focus {
 			color:#fff;
@@ -62,14 +64,8 @@
 		body.focus a {
 			color:#fff;
 		}
-		body.focus a span {
-			border-color:#fff;
-		}
 		body.focus a.focus {
 			color:black;
-		}
-		body.focus a.focus span {
-			border-color: black;
 		}
 		.coda {
 			padding-top:10vw;
@@ -82,14 +78,15 @@
 				padding: 60px;
 			}
 			h1 { padding:30px 0 10px; }
-			h2 { padding:50px 0 10px; }
+			h2 { padding:50px 0 0; }
+			h2 + p, h2 + ul { padding-top:22px; }
 			p  { padding:30px 0; }
 			li { padding: 0 0 22px; }
 			.coda { padding-top:50px; }
 		}
 
 		@media (prefers-reduced-motion: reduce) {
-			body, a, a span { transition: none; }
+			body, a { transition: none; }
 		}
 	</style>
 </head>
@@ -108,11 +105,11 @@
 	<h2>Writing</h2>
 
 	<ul>
-		<li><a href="https://alexandrepeschel.substack.com/p/the-climate-crisis-is-actually-a" target="_blank" rel="noopener noreferrer"><span>The climate crisis is actually a crisis of public discourse</span></a> <span class="date">— August 2026</span></li>
-		<li><a href="https://alexandrepeschel.substack.com/p/divergence-and-the-potential-of-friction" target="_blank" rel="noopener noreferrer"><span>Divergence and the Potential of Friction</span></a> <span class="date">— July 2026</span></li>
-		<li><a href="https://alexandrepeschel.substack.com/p/i-used-to-think-it-was-all-a-coordination" target="_blank" rel="noopener noreferrer"><span>I used to think it was all a coordination failure. Here’s what I missed.</span></a> <span class="date">— July 2026</span></li>
-		<li><a href="https://www.linkedin.com/pulse/climate-action-true-cost-everything-alexandre-peschel" target="_blank" rel="noopener noreferrer"><span>Climate Action and the True Cost of Everything</span></a> <span class="date">— July 2021</span></li>
-		<li><a href="https://www.linkedin.com/pulse/climate-action-story-personal-tipping-points-alexandre-peschel" target="_blank" rel="noopener noreferrer"><span>Climate Action: A Story of Personal Tipping Points</span></a> <span class="date">— April 2021</span></li>
+		<li><a href="https://alexandrepeschel.substack.com/p/the-climate-crisis-is-actually-a" target="_blank" rel="noopener noreferrer"><span>The climate crisis is actually a crisis of public discourse</span></a> <span class="date">2026</span></li>
+		<li><a href="https://alexandrepeschel.substack.com/p/divergence-and-the-potential-of-friction" target="_blank" rel="noopener noreferrer"><span>Divergence and the Potential of Friction</span></a> <span class="date">2026</span></li>
+		<li><a href="https://alexandrepeschel.substack.com/p/i-used-to-think-it-was-all-a-coordination" target="_blank" rel="noopener noreferrer"><span>I used to think it was all a coordination failure. Here’s what I missed.</span></a> <span class="date">2026</span></li>
+		<li><a href="https://www.linkedin.com/pulse/climate-action-true-cost-everything-alexandre-peschel" target="_blank" rel="noopener noreferrer"><span>Climate Action and the True Cost of Everything</span></a> <span class="date">2021</span></li>
+		<li><a href="https://www.linkedin.com/pulse/climate-action-story-personal-tipping-points-alexandre-peschel" target="_blank" rel="noopener noreferrer"><span>Climate Action: A Story of Personal Tipping Points</span></a> <span class="date">2021</span></li>
 	</ul>
 
 	<p>
